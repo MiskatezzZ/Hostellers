@@ -12,8 +12,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { collection, getDocs, query, orderBy, deleteDoc, doc } from 'firebase/firestore';
 import { db, auth } from '../config/firebaseConfig';
 import { router } from 'expo-router';
-import CardItem, { Card } from '../../components/Carditem';
-
+import CardItem, { Card } from '../../components/CardItem';
 
 export default function MyCardsScreen() {
   const [cards, setCards] = useState<Card[]>([]);

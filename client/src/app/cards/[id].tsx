@@ -3,7 +3,7 @@ import { useLocalSearchParams, router } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db, auth } from '../config/firebaseConfig';
-import CardItem, { Card } from '../../components/Carditem';
+import CardItem, { Card } from '../../components/CardItem';
 
 export default function CardDetailScreen() {
   const { id } = useLocalSearchParams();
